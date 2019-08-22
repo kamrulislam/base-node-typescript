@@ -16,3 +16,7 @@ npm i
 npm run build
 npm start
 ```
+
+## Additional
+
+This project also includes some vscode extensions suggestions.

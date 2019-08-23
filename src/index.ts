@@ -1,4 +1,7 @@
-import { promisify } from './promisify';
+import { promisify, CUSTOM } from './promisify';
+
+type CallbackFunctionObject = {(...args: any[]): void; [CUSTOM]?: any}
+
 
 const greeter = (person: string, callback?: any) => {
     const greet = "Hello, " + person;
@@ -23,4 +26,18 @@ const asyncCall = async () => {
 
 asyncCall();
 
+
+const evenSuccess: CallbackFunctionObject = (n: number, onSuccess: (n: number) => void, onError: (n: number) => void) => {
+    if (n % 2) {
+      onError(n);
+    } else {
+      onSuccess(n);
+    }
+  };
+  
+  evenSuccess[CUSTOM] = (n: any) => new Promise((resolve, reject) => {
+    evenSuccess(n, () => resolve("even"), () => reject("odd"));
+  });
+  
+  promisify(evenSuccess)(2).then(console.log);
 

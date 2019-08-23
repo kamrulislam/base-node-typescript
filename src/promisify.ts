@@ -23,5 +23,6 @@ const promisify = (fn : CallbackFunctionObject): CallbackFunction => {
 }
 
 export {
-    promisify
+    promisify,
+    CUSTOM
 }

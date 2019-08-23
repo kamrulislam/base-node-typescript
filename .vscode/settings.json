@@ -1,9 +1,23 @@
 // Place your settings in this file to overwrite default and user settings.
 {
+  // I want my default to be 4, but JS/JSON to be 2
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
-    { "language": "typescript", "autoFix": true }
+    {
+      "language": "typescript",
+      "autoFix": true
+    }
   ],
   "editor.formatOnSave": true,
   "[javascript]": {

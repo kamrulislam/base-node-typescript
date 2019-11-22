@@ -17,6 +17,14 @@ npm run build
 npm start
 ```
 
+## Test
+
+[jest](https://jestjs.io/en/) has been added as testing platform. Test file should be ended with `.spec.ts`. To run test, please use the following command
+
+```
+npm test
+```
+
 ## Additional
 
 This project also includes some vscode extensions suggestions.

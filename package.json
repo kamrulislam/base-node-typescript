@@ -17,11 +17,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.7",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.5.3"
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
   },
-  "dependencies": {
-    "@types/jest": "^24.0.23"
-  }
+  "dependencies": {}
 }

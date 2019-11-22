@@ -1,0 +1,28 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "class-name": false,
+        "export-name": false,
+        "forin": false,
+        "interface-name": false,
+        "label-position": false,
+        "member-access": true,
+        "object-literal-sort-keys": false,
+        "no-arg": false,
+        "no-console": false,
+        "no-construct": false,
+        "no-duplicate-variable": true,
+        "no-eval": false,
+        "no-internal-module": true,
+        "no-shadowed-variable": true,
+        "no-switch-case-fall-through": true,
+        "no-unused-expression": true,
+        "quotemark":[true, "single"],
+        "semicolon": true,
+        "trailing-comma": false,
+        "typedef": false,
+        "typedef-whitespace": false,
+        "variable-name": false,
+        "whitespace": false
+    }
+}
